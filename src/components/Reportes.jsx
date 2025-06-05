@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/reportes.css';  // Ajusta la ruta según la estructura
-
+import '../styles/App.css'
 
 // Datos simulados para reportes
 const reportesData = [

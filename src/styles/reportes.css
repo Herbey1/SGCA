@@ -1,99 +1,114 @@
-.container {
+/* reportes.css */
+
+/* Estilos para el contenedor de reportes */
+.main-content {
+  background-color: white;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-hgroup h2 {
+/* Títulos de la página de reportes 
+h1, h2 {
+  color: #333;
+}
+
+h1 {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 10px;
-}
-
-hgroup h3 {
-  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}*/
+
+/* Filtros de búsqueda o selección */
 .filter-section {
   margin-bottom: 20px;
 }
 
+.filter-section select,
 .filter-section label {
-  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px;
   margin-right: 10px;
+  border-radius: 5px;
 }
 
 .filter-section select {
-  padding: 8px;
-  width: 200px;
-  font-size: 1rem;
-  border-radius: 5px;
   border: 1px solid #ddd;
 }
 
-.report-list {
-  margin-top: 20px;
+/*button {
+  padding: 12px 20px;
+  background-color: #27ae60;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 
+button:hover {
+  background-color: #2ecc71;
+}*/
+
+/* Estilos para la tabla de reportes */
 .report-list table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.report-list table th, .report-list table td {
-  border: 1px solid #ddd;
-  padding: 10px;
+.report-list table th,
+.report-list table td {
+  padding: 15px;
   text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
 .report-list table th {
-  background-color: #f4f4f4;
+  background-color: #f7f7f7;
+  font-weight: bold;
 }
 
 .report-list button {
-  padding: 5px 10px;
-  margin: 5px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #27ae60;
+  color: #27ae60;
 }
 
 .report-list button:hover {
-  background-color: #0056b3;
+  background-color: #27ae60;
+  color: white;
+  border: none;
 }
 
-.create-report {
+.create-report form {
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
-}
-
-.create-report h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
 }
 
 .create-report form div {
   margin-bottom: 15px;
 }
 
-.create-report form input, .create-report form select {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
+.create-report form input,
+.create-report form select {
+  padding: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
 }
 
 .create-report form button {
-  padding: 10px 20px;
-  background-color: #28a745;
+  padding: 12px 20px;
+  background-color: #27ae60;
   color: white;
-  font-size: 1.1rem;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .create-report form button:hover {
-  background-color: #218838;
+  background-color: #2ecc71;
 }

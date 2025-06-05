@@ -1,7 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import '../styles/sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({ setIsAuthenticated }) => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    navigate('/login', {
+      state: { message: 'Sesión cerrada exitosamente' }
+    });
+  };
+
   return (
     <div className="sidebar">
       <h2>SGCA</h2>
@@ -10,7 +20,9 @@ const Sidebar = () => {
         <li><Link to="/reportes">Reportes</Link></li>
         <li><Link to="/perfil">Perfil</Link></li>
       </ul>
-      <button className="logout-btn">Cerrar Sesión</button>
+      <button className="logout-btn" onClick={handleLogout}>
+        Cerrar Sesión
+      </button>
     </div>
   );
 };

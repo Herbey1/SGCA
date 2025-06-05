@@ -1,0 +1,99 @@
+.container {
+  padding: 20px;
+}
+
+hgroup h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+hgroup h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.filter-section select {
+  padding: 8px;
+  width: 200px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.report-list {
+  margin-top: 20px;
+}
+
+.report-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.report-list table th, .report-list table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.report-list table th {
+  background-color: #f4f4f4;
+}
+
+.report-list button {
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.report-list button:hover {
+  background-color: #0056b3;
+}
+
+.create-report {
+  margin-top: 30px;
+}
+
+.create-report h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.create-report form div {
+  margin-bottom: 15px;
+}
+
+.create-report form input, .create-report form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.create-report form button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-report form button:hover {
+  background-color: #218838;
+}

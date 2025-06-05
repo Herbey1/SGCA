@@ -1,0 +1,154 @@
+/* App.css */
+
+/* Estilos generales para el cuerpo de la aplicación */
+body {
+  font-family: 'Arial', sans-serif; /* Fuentes comunes en wireframes */
+  background-color: #f4f6f9; /* Fondo claro, similar al de los wireframes */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Color de texto oscuro para mejorar la legibilidad */
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos de encabezado principal */
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #2d3436; /* Color más oscuro para encabezados */
+}
+
+h1 {
+  font-size: 2.5rem; /* Tamaño grande para títulos principales */
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem; /* Tamaño de encabezados secundarios */
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.5rem; /* Tamaño de subtítulos */
+  margin-bottom: 10px;
+}
+
+/* Estilos para los botones */
+button {
+  padding: 10px 20px;
+  background-color: #27ae60; /* Verde, siguiendo la paleta de wireframes */
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2ecc71; /* Verde más brillante al pasar el mouse */
+}
+
+/* Barra lateral (Sidebar) */
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Contenido principal */
+.main-content {
+  margin-left: 270px; /* Espacio suficiente para no solapar el sidebar */
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Estilos para las tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+
+table tr:hover {
+  background-color: #f1f1f1; /* Resalta filas al pasar el mouse */
+}
+
+/* Estilos de las pestañas */
+ul[role="tablist"] {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+ul[role="tablist"] li {
+  margin-right: 20px;
+}
+
+ul[role="tablist"] button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul[role="tablist"] button:hover {
+  background-color: #ecf0f1;
+}
+
+ul[role="tablist"] button[aria-selected="true"] {
+  background-color: #27ae60;
+  color: white;
+  border-color: #27ae60;
+}

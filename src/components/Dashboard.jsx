@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Sidebar from './Sidebar'; // Asegúrate de importar Sidebar
 
 export default function Dashboard({ setIsAuthenticated }) {
   const navigate = useNavigate();
@@ -30,29 +31,12 @@ export default function Dashboard({ setIsAuthenticated }) {
   return (
     <div className="flex h-screen">
       {/* Sidebar */}
-      <aside className="w-64 bg-gray-800 text-white flex flex-col">
-        <div className="p-6 text-2xl font-bold border-b border-gray-700">SGCA</div>
-        <nav className="flex-1 p-4">
-          <ul className="space-y-2">
-            {['Comisiones', 'Reportes', 'Perfil'].map(item => (
-              <li key={item}>
-                <button className="w-full text-left py-2 px-4 rounded hover:bg-gray-700 transition">
-                  {item}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className="p-4 border-t border-gray-700">
-          <button onClick={handleLogout} className="w-full bg-red-600 py-2 rounded hover:bg-red-700 transition">
-            Cerrar Sesión
-          </button>
-        </div>
-      </aside>
+      <Sidebar />
 
       {/* Contenido principal */}
-      <main className="flex-1 p-8 bg-gray-100 overflow-auto">
+      <main className="flex-1 p-8 bg-gray-100 overflow-auto ml-64"> {/* Ajuste para no sobreponer con el Sidebar */}
         <h1 className="text-3xl font-semibold mb-6">Gestión de Comisiones</h1>
+
         {/* Pestañas */}
         <div className="mb-6 border-b border-gray-300">
           <ul role="tablist" className="flex space-x-4">

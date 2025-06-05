@@ -1,6 +1,14 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
 
-export default function PrivateRoute({ isAuthenticated, children }) {
-  return isAuthenticated ? children : <Navigate to="/login" replace />;
-}
+const PrivateRoute = ({ isAuthenticated, children }) => {
+  if (!isAuthenticated) {
+    // Si no está autenticado, redirige al Login
+    return <Navigate to="/login" replace />;
+  }
+
+  // Si está autenticado, permite acceder a la ruta protegida
+  return children;
+};
+
+export default PrivateRoute;
